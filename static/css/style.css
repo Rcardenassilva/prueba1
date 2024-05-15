@@ -29,11 +29,14 @@ z-index: 999999;
 padding-right: 1em;
 }
 footer {
-    background-color: #dee2e6;
+    
+    background-color: #f3f7fc;
     bottom: 0;
     width: 100%;
     height: 250px;
     padding-top: 30px;
+    align-self: flex-end;
+  
 }
 
 .img-fluid {

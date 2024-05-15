@@ -2,12 +2,12 @@
 
 {% block content %}
 <h1>Bienvenido(a), {{ request.user.username }}</h1>
-<p>Estas logeado en el sistema</p>
+<p>Estas Registrado en el sistema</p>
 
 <!-- Botón para cerrar sesión-->
 <form action="{% url 'logout' %}" method="post">
   {% csrf_token %}
-  <button class="btn btn-danger">Cerrar Sesión</button>
+  {% comment %} <button class="btn btn-danger">Cerrar Sesión</button> {% endcomment %}
 </form>
 
 {% endblock%}
